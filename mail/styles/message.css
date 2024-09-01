@@ -1,0 +1,172 @@
+.navbar{
+  height: 70px !important;
+  position: relative;
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+body {
+  /*background: #599fd9;
+  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
+  background: linear-gradient(to right, #599fd9, #c2e59c);*/
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+.topSettings{
+  padding-left: 3.5rem !important;
+}
+
+.p-5{
+  padding: 0rem !important;
+}
+#dropdownMenu1{
+  padding: 0;
+  padding-bottom: 13px;
+}
+#dropdownMenu1:focus{
+  box-shadow: none;
+}
+.checks{
+  position: relative;
+  height: 55px;
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-bottom: 0;
+  padding-left: 30px;
+}
+hr{
+  margin: 0;
+}
+.dropdownLists{
+  position: absolute;
+  left: 20px;
+  list-style: none;
+  box-shadow: -6px 4px 14px -2px rgba(79,67,67,0.71);
+  -webkit-box-shadow: -6px 4px 14px -2px rgba(79,67,67,0.71);
+  -moz-box-shadow: -6px 4px 14px -2px rgba(79,67,67,0.71);
+  padding: 10px;
+  border-radius: 5px;
+  padding: 0 30px;
+  background-color: white;
+  z-index: 20;
+}
+
+.dropdownLists li{
+  padding: 10px 0;
+}
+.dropped{
+  display: none;
+}
+
+.table{
+  margin: 0;
+}
+
+.messageSettings{
+  width: 30px !important;
+}
+.iconHover:hover{
+  cursor: pointer;
+}
+
+.senderDetailsSubject{
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.messageSubject{
+  -webkit-font-smoothing: antialiased;
+  font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size: 1.375rem;
+  font-variant-ligatures: no-contextual;
+  color: #202124;
+  font-weight: 400;
+}
+
+.senderIdentity{
+  -webkit-font-smoothing: antialiased;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size: .875rem;
+  letter-spacing: .2px;
+  color: #202124;
+  line-height: 20px;
+}
+
+.messageContent{
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.messageContent p{
+  -webkit-font-smoothing: antialiased;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  letter-spacing: .2px;
+  color: #202124;
+  line-height: 20px;
+}

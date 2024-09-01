@@ -1,0 +1,221 @@
+.navbar{
+  height: 70px !important;
+  position: relative;
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  bottom: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  overflow-y: hidden;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
+
+body {
+  /*background: #599fd9;
+  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
+  background: linear-gradient(to right, #599fd9, #c2e59c);*/
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+.topSettings{
+  padding-left: 3.5rem !important;
+}
+
+.p-5{
+  padding: 0rem !important;
+}
+
+hr{
+  margin: 0;
+}
+
+
+.table{
+  margin: 0;
+}
+
+.messageSettings{
+  width:
+}
+
+form{
+  margin: auto;
+}
+
+.outerB{
+  margin: auto;
+  height: 60px !important;
+  width: 550px;
+  border: 1px solid #ced4da !important;
+  border-radius: 5px;
+}
+
+.icon-inside {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 12px);
+  font-size: 16px;
+  font-size: 1.125rem;
+  color: #c4c3c3;
+  z-index:3;
+}
+
+.formDiv{
+  padding: 20px;
+  height: calc(100% - 70px);
+  position: relative;
+  overflow: hidden;
+}
+
+.fromDiv{
+  display: flex;
+  border-bottom: 1px solid grey;
+  margin-bottom: 15px;
+}
+
+.fromDiv input{
+  width: 95%;
+  border: none;
+  padding-bottom: 5px;
+}
+
+.fromDiv input:focus{
+  outline: none;
+}
+
+.toDiv{
+  display: flex;
+  border-bottom: 1px solid grey;
+  margin-bottom: 15px;
+}
+
+.toDiv input{
+  width: 95%;
+  border: none;
+  padding-bottom: 5px;
+}
+
+.toDiv input:focus{
+  outline: none;
+}
+
+.subjectDiv{
+  display: flex;
+  border-bottom: 1px solid grey;
+  margin-bottom: 15px;
+}
+
+.subjectDiv input{
+  width: 95%;
+  border: none;
+  padding-bottom: 5px;
+}
+
+.subjectDiv input:focus{
+  outline: none;
+}
+
+.functionalities{
+  position: fixed !important;
+  bottom: 0 !important;
+  padding: 10px 0;
+  display: flex !important;
+  border-top: 1px solid #e6e6e6;
+  width: 99%;
+  background: white;
+  overflow: hidden;
+  height: 60px;
+}
+.sendAttch{
+  margin-right: 20px;
+}
+.textMenu{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.textMenu button{
+  background-color: transparent;
+  border: none;
+}
+.sendMailBtn{
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+.messageArea{
+  outline: none;
+  overflow: hidden;
+  text-align:justify;
+}
+.messageField{
+  border: 0 none;
+  height: 520px;
+  max-height: 570px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  word-break: break-all;
+}
+.card-horizontal{
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.attachedFileGrids{
+  position: fixed;
+  bottom: 80px;
+}
